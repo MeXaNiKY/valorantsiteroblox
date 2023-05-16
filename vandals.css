@@ -1,0 +1,47 @@
+.header{
+    grid-area: 1;
+    height:50px;
+    padding: 5px;
+    }
+    .login{
+    height: 100px;
+    padding: 45px;
+    width: 5px;
+    
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 10px;
+    }
+    .sidebar{
+    padding-top: 30px;
+    padding-left: 50px;
+    font-size: 20pt;
+    grid-area: s;
+    }
+    .sidebar div{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 20px;
+    grid-area: g;
+    }
+    body{
+    display: grid;
+    background-color: darkslategray;
+    grid-template-columns: 1fr 2fr 2fr 1fr; 
+    grid-template-rows: 1fr 3fr 5fr 1fr;
+    grid-template-areas:
+    "h . . l"
+    "m m m m"
+    "s g g g"
+    "f f f f";
+    height: 1000px;
+    }
+    
+    .header-bg{
+        padding: 5px;
+    }
+    
